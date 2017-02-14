@@ -1,0 +1,106 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport",content="width=device-width, initial-scale=1")
+    meta(name="description",content="")
+    meta(name="author",content="")
+    link(rel="icon",href="../../favicon.ico")
+    title= Rotaract
+    block styles
+      link(rel="stylesheet",href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
+      link(rel="stylesheet",href="css/projects.css")
+      link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+      link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+      link(href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet")
+      link(href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet")
+
+  body(data-spy="scroll",data-target=".scrollspy")
+    block body
+      .container-flex
+          // Static navbar
+          .navbar.navbar-default.navbar-fixed-top(role='navigation')
+            .container-fluid
+              .navbar-header
+                button.navbar-toggle#overlay.hidden-md.hidden-lg
+                  span.sr-only Toggle navigation
+                  span.icon-bar
+                  span.icon-bar
+                  span.icon-bar
+                a.navbar-brand(href='index.html'): img(src="images/logo.png")
+              .navbar-collapse.collapse.overlay
+                ul.nav.navbar-nav.navbar-right
+                  li.active
+                    a(href='index.html') Acasa
+                  li
+                    a(href='about.html') Despre Noi
+                  li
+                    a(href='projects.html') Proiecte
+                  li
+                    a(href='members.html') Membrii
+                  li
+                    a(href='register.html') Inscriere
+                  li
+                    a(href='help.html') Vrei sa ajuti?
+                  li
+                    a(href='contact.html') Contact
+
+            .navbar-overlay
+              .fa.fa-times.fa-3x#close
+              ul
+                li
+                  a(href='index.html') Acasa 
+                li
+                  a(href='about.html') Despre Noi 
+                li   
+                  a(href='projects.html') Proiecte 
+                li  
+                  a(href='members.html') Membrii 
+                li  
+                  a(href='register.html') Inscriere 
+                li  
+                  a(href='help.html') Vrei sa ajuti? 
+                li  
+                  a(href='contact.html') Contact 
+        
+      .container-fluid
+        .header
+          .header-text(data-aos="fade-up")
+            h1 Proiecte
+
+      .details
+        .container
+
+
+      .main-partners
+        h1.text-center Partners
+        .partners
+          a(href="#"): img(src="images/download.png")
+          a(href="#"): img(src="images/carlogo.png")
+          a(href="#"): img(src="images/ooo-main-logo-2col-trans.png")
+
+      .footer.text-center
+        .container
+          .col-sm-4
+            img(src="../images/logo.png")
+          .col-sm-4
+            h3 Despre
+            hr
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          .col-sm-4
+            h3 Social
+            hr
+            a(href="#"): .fa.fa-facebook.fa-3x
+        .copyright
+          .container
+            p.text-muted Copyright by Mojo Design SRL
+      a(href="#0" class="cd-top") Top
+    block scripts
+      script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+      script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")
+      script(src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js")
+      script(src="javascript/style.js")
+      script(src="javascript/backtotop.js")
+      script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+
