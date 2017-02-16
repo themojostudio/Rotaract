@@ -140,26 +140,36 @@ h1, h3, a {
     color: white;
     text-align: center; }
 
-.details {
-  height: 500px; }
-  .details h1 {
-    margin-top: 170px; }
-
-.members {
-  height: 200px;
-  background-image: url(../images/header.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed; }
-  .members button {
-    padding: 20px;
-    transition: 0.5s all ease-in-out;
-    margin-top: 60px;
-    background-color: rgba(217, 27, 92, 0.6);
-    border: none;
+.contact-info {
+  margin-top: 50px; }
+  .contact-info .fa {
+    margin-top: 30px; }
+  .contact-info .form-control {
     border-radius: 0; }
-    .members button:hover {
-      background-color: #D91B5C; }
+  .contact-info .submit-button {
+    transition: 0.5s all ease-in-out;
+    background-color: #D91B5C;
+    color: white; }
+    .contact-info .submit-button:hover {
+      -webkit-transform: scale(1.01);
+      -ms-transform: scale(1.01);
+      transform: scale(1.01); }
+
+#map-contact {
+  position: relative;
+  margin-top: 100px;
+  height: 600px;
+  width: 100%; }
+  #map-contact .overlay {
+    position: absolute;
+    z-index: 2;
+    background-color: #D91B5C;
+    height: 400px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
 
 .main-partners h1 {
   background-color: rgba(0, 0, 0, 0.5);
@@ -241,7 +251,7 @@ h1, h3, a {
   @media (max-width: 360px) {
     .footer img {
       height: 130px;
-      width: 150px; }
+      width: 200px; }
     .footer p {
       padding-right: 15px;
       padding-left: 15px; } }

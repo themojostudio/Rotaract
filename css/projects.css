@@ -1,4 +1,5 @@
-html {
+html, body {
+  max-width: 100%;
   overflow-x: hidden; }
 
 h1, h3, a {
@@ -130,7 +131,7 @@ h1, h3, a {
   position: relative;
   height: 300px;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-image: url(../images/header.jpeg);
   background-attachment: fixed; }
   .header .header-text {
@@ -139,17 +140,92 @@ h1, h3, a {
     color: white;
     text-align: center; }
 
-.details {
-  height: 500px; }
-  .details h1 {
-    margin-top: 50px;
-    text-align: center; }
+.projects {
+  margin-top: 50px; }
+  .projects hr {
+    border-top: 1px solid #D91B5C;
+    margin: 0 30%; }
+  .projects .container .image {
+    position: relative;
+    display: inline-block;
+    margin: 50px 20px; }
+    .projects .container .image a {
+      text-decoration: none; }
+    .projects .container .image img {
+      box-shadow: 0px 5px 10px black;
+      height: 400px;
+      width: 500px;
+      transition: 0.5s all ease-in-out; }
+      @media (max-width: 600px) {
+        .projects .container .image img {
+          width: 400px;
+          height: 300px; } }
+      @media (max-width: 460px) {
+        .projects .container .image img {
+          width: 300px;
+          height: 250px; } }
+  .projects .container .text-overlay {
+    transition: 0.5s all ease-in-out;
+    opacity: 0;
+    color: white;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(217, 27, 92, 0.5); }
+    .projects .container .text-overlay h1 {
+      margin: 30% 15%;
+      border: 4px solid white;
+      padding: 10px; }
+    .projects .container .text-overlay:hover {
+      opacity: 1; }
 
-.main-partners h1 {
-  background-color: rgba(0, 0, 0, 0.5);
-  margin: 0px;
-  padding-top: 30px;
-  color: white; }
+.others {
+  margin-top: 50px; }
+  .others hr {
+    border-top: 1px solid #D91B5C;
+    margin: 0 30%; }
+  .others .container-flex .image {
+    position: relative;
+    display: inline-block;
+    margin: 50px 20px; }
+    .others .container-flex .image a {
+      text-decoration: none; }
+    .others .container-flex .image img {
+      box-shadow: 0px 5px 10px black;
+      height: 250px;
+      width: 350px;
+      transition: 0.5s all ease-in-out; }
+    @media (max-width: 810px) {
+      .others .container-flex .image img {
+        width: 300px; } }
+  .others .container-flex .text-overlay {
+    transition: 0.5s all ease-in-out;
+    opacity: 0;
+    color: white;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(217, 27, 92, 0.5); }
+    .others .container-flex .text-overlay h1 {
+      margin: 17% 15%;
+      border: 4px solid white;
+      padding: 10px; }
+    .others .container-flex .text-overlay:hover {
+      opacity: 1; }
+
+.main-partners {
+  margin-top: 50px; }
+  .main-partners h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0px;
+    padding-top: 30px;
+    color: white; }
 
 .partners {
   display: -webkit-flex;
@@ -212,7 +288,7 @@ h1, h3, a {
     .footer img {
       width: 200px;
       height: 150px; } }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .footer img {
       width: 400px;
       height: 180px;

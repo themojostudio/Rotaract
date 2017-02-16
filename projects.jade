@@ -31,14 +31,14 @@ html(lang="en")
                 a.navbar-brand(href='index.html'): img(src="images/logo.png")
               .navbar-collapse.collapse.overlay
                 ul.nav.navbar-nav.navbar-right
-                  li.active
+                  li
                     a(href='index.html') Acasa
                   li
                     a(href='about.html') Despre Noi
-                  li
+                  li.active
                     a(href='projects.html') Proiecte
                   li
-                    a(href='members.html') Membrii
+                    a(href='members.html') Membri
                   li
                     a(href='register.html') Inscriere
                   li
@@ -56,7 +56,7 @@ html(lang="en")
                 li   
                   a(href='projects.html') Proiecte 
                 li  
-                  a(href='members.html') Membrii 
+                  a(href='members.html') Membri 
                 li  
                   a(href='register.html') Inscriere 
                 li  
@@ -69,16 +69,55 @@ html(lang="en")
           .header-text(data-aos="fade-up")
             h1 Proiecte
 
-      .details
-        .container
 
 
+      .projects
+        .container.text-center
+          h1 Proiecte Curente
+          hr
+          .image
+            img(src="/images/project-1.jpg")
+            a(href="firstproject.html").text-overlay
+              h1 First Project
+          .image  
+            img(src="/images/project-1.jpg")
+            a(href="firstproject.html").text-overlay
+              h1 Project Name
+
+      .others
+        .container-flex.text-center
+          .col-sm-6
+            h1 Proiecte Viitoare
+            hr
+            .image
+              img(src="/images/project-1.jpg")
+              a(href="firstproject.html").text-overlay
+                h1 Project Name
+            .image  
+              img(src="/images/project-1.jpg")
+              a(href="firstproject.html").text-overlay
+                h1 Project Name  
+          .col-sm-6
+            h1 Proiecte Anterioare
+            hr
+            .image
+              img(src="/images/project-1.jpg")
+              a(href="firstproject.html").text-overlay
+                h1 Project Name
+            .image  
+              img(src="/images/project-1.jpg")
+              a(href="firstproject.html").text-overlay
+                h1 Project Name  
+
+
+      .row            
       .main-partners
-        h1.text-center Partners
+        h1.text-center Parteneri
         .partners
           a(href="#"): img(src="images/download.png")
           a(href="#"): img(src="images/carlogo.png")
           a(href="#"): img(src="images/ooo-main-logo-2col-trans.png")
+
 
       .footer.text-center
         .container
@@ -102,5 +141,5 @@ html(lang="en")
       script(src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js")
       script(src="javascript/style.js")
       script(src="javascript/backtotop.js")
-      script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+
 

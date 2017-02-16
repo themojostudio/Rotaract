@@ -1,7 +1,8 @@
 @import "normalize.scss"
 
 //Basic
-html
+html,body
+	max-width: 100%
 	overflow-x: hidden
 
 h1,h3,a
@@ -183,7 +184,7 @@ $font: 'Roboto Slab', serif
 	height: 300px
 	background:
 		size: cover
-		position: center
+		position: bottom
 		image: url(../images/header.jpeg)
 		attachment: fixed
 
@@ -194,16 +195,94 @@ $font: 'Roboto Slab', serif
 		text-align: center
 
 
-// Details
-.details 
-	height: 500px
-	h1
-		margin-top: 50px
-		text-align: center
+// Projects
+.projects
+	margin-top: 50px
+	hr 
+		border-top: 1px solid $primary-color
+		margin: 0 30%
+	.container 
+		.image 
+			a 
+				text-decoration: none
+			position: relative
+			display: inline-block
+			margin: 50px 20px
+			img 
+				box-shadow: 0px 5px 10px black
+				height: 400px
+				width: 500px
+				transition: 0.5s all ease-in-out
+
+				@media (max-width: 600px)
+					width: 400px
+					height: 300px
+				@media (max-width: 460px)
+					width: 300px
+					height: 250px
+		.text-overlay
+			transition: 0.5s all ease-in-out
+			opacity: 0
+			color: white
+			position: absolute
+			margin: auto
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			background-color: rgba($primary-color, 0.5)
+			h1 
+				margin: 30% 15%
+				border: 4px solid white
+				padding: 10px
+
+			&:hover
+				opacity: 1
+
+.others
+	margin-top: 50px
+	hr 
+		border-top: 1px solid $primary-color
+		margin: 0 30%
+	.container-flex 
+		.image 
+			a 
+				text-decoration: none
+			position: relative
+			display: inline-block
+			margin: 50px 20px
+			img 
+				box-shadow: 0px 5px 10px black
+				height: 250px
+				width: 350px
+				transition: 0.5s all ease-in-out
+
+			@media (max-width: 810px)
+				img 
+					width: 300px
+		.text-overlay
+			transition: 0.5s all ease-in-out
+			opacity: 0
+			color: white
+			position: absolute
+			margin: auto
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			background-color: rgba($primary-color, 0.5)
+			h1 
+				margin: 17% 15%
+				border: 4px solid white
+				padding: 10px
+
+			&:hover
+				opacity: 1
 
 
 // Partners
 .main-partners
+	margin-top: 50px
 	h1 
 		background-color: rgba(black, 0.5)
 		margin: 0px
@@ -269,7 +348,7 @@ $font: 'Roboto Slab', serif
 			width: 200px
 			height: 150px
 
-	@media (max-width: 768px)
+	@media (max-width: 767px)
 		img 
 			width: 400px
 			height: 180px

@@ -13,13 +13,6 @@ $(window).scroll(function() {
     }
 });
 
-$('.slider').slick({
-  autoplay: true,
-  autoplaySpeed: 3000,
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 1
-});
 
 $('#overlay').click(function() {
 	$('.navbar-overlay').fadeIn(400)

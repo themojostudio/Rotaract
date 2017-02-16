@@ -140,32 +140,75 @@ h1, h3, a {
     color: white;
     text-align: center; }
 
-.details {
-  height: 500px; }
-  .details h1 {
-    margin-top: 170px; }
-
 .members {
-  height: 200px;
-  background-image: url(../images/header.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed; }
-  .members button {
-    padding: 20px;
+  text-align: justify;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-top: 50px;
+  height: 100%; }
+  .members .image {
+    display: inline-block;
+    color: white;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    margin: auto; }
+    .members .image img {
+      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+      height: 250px;
+      width: 200px;
+      border-radius: 5%; }
+  .members a {
+    font-size: 3rem;
+    text-decoration: none; }
+  .members .fa {
     transition: 0.5s all ease-in-out;
-    margin-top: 60px;
-    background-color: rgba(217, 27, 92, 0.6);
-    border: none;
-    border-radius: 0; }
-    .members button:hover {
-      background-color: #D91B5C; }
+    margin-top: 30px;
+    margin-left: 85px;
+    color: rgba(0, 0, 0, 0.5); }
+    .members .fa:hover {
+      color: rgba(217, 27, 92, 0.9); }
+  .members .text-overlay {
+    height: 70px;
+    margin-top: 100px;
+    background-color: rgba(217, 27, 92, 0.8);
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 15px; }
+  .members .text-overlay-register {
+    transition: 0.5s all ease-in-out;
+    color: white;
+    height: 250px;
+    padding-top: 90px;
+    background-color: rgba(217, 27, 92, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 45px; }
+    .members .text-overlay-register:hover {
+      -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+      transform: scale(1.03); }
 
-.main-partners h1 {
-  background-color: rgba(0, 0, 0, 0.5);
-  margin: 0px;
-  padding-top: 30px;
-  color: white; }
+.main-partners {
+  margin-top: 50px; }
+  .main-partners h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0px;
+    padding-top: 30px;
+    color: white; }
 
 .partners {
   display: -webkit-flex;
@@ -241,7 +284,7 @@ h1, h3, a {
   @media (max-width: 360px) {
     .footer img {
       height: 130px;
-      width: 150px; }
+      width: 200px; }
     .footer p {
       padding-right: 15px;
       padding-left: 15px; } }

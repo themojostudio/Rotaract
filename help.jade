@@ -10,7 +10,7 @@ html(lang="en")
     title= Rotaract
     block styles
       link(rel="stylesheet",href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
-      link(rel="stylesheet",href="css/about.css")
+      link(rel="stylesheet",href="css/help.css")
       link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
       link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
       link(href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet")
@@ -33,7 +33,7 @@ html(lang="en")
                 ul.nav.navbar-nav.navbar-right
                   li
                     a(href='index.html') Acasa
-                  li.active
+                  li
                     a(href='about.html') Despre Noi
                   li
                     a(href='projects.html') Proiecte
@@ -41,7 +41,7 @@ html(lang="en")
                     a(href='members.html') Membri
                   li
                     a(href='register.html') Inscriere
-                  li
+                  li.active
                     a(href='help.html') Vrei sa ajuti?
                   li
                     a(href='contact.html') Contact
@@ -56,7 +56,7 @@ html(lang="en")
                 li   
                   a(href='projects.html') Proiecte 
                 li  
-                  a(href='members.html') Membri 
+                  a(href='members.html') Membri
                 li  
                   a(href='register.html') Inscriere 
                 li  
@@ -66,27 +66,47 @@ html(lang="en")
         
       .container-fluid
         .header
-          .header-text(data-aos="fade-up")
-            h1 Despre Noi
+          .header-text
+            h1 Vrei sa ajuti?
 
-
-      .details
-        .container
-          h1 Cine suntem?
-          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+      .row.aid.text-center
+        .col-md-4.assistance
+          h3: .fa.fa-building  Reprezinti o firma?
           hr
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          button.btn-primary.btn-lg Button
+        .col-md-4.assistance
+          h3.text-center: .fa.fa-black-tie  PFA
+          hr
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          button.btn-primary.btn-lg Button
+        .col-md-4.assistance
+          h3.text-center: .fa.fa-user  PFS
+          hr
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          button.btn-primary.btn-lg Button
 
-      .members
-        .container.text-center
-          a(href="members.html"): button.btn-primary.btn-lg Membri
+      .row.others 
+        .container
+          .col-sm-12.text-center
+            h3: .fa.fa-percent  Other Payments
+            hr
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            button.btn-primary.btn-lg Button
 
 
+
+
+
+
+      .row            
       .main-partners
         h1.text-center Parteneri
         .partners
           a(href="#"): img(src="images/download.png")
           a(href="#"): img(src="images/carlogo.png")
           a(href="#"): img(src="images/ooo-main-logo-2col-trans.png")
+
 
       .footer.text-center
         .container
@@ -110,3 +130,7 @@ html(lang="en")
       script(src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js")
       script(src="javascript/style.js")
       script(src="javascript/backtotop.js")
+
+
+
+
